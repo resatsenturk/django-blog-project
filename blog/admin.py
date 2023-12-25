@@ -1,7 +1,9 @@
 from django.contrib import admin
 from blog.models import KategoriModel,YazilarModel,YorumModel,IletisimModel
 
-admin.register(KategoriModel)
+@admin.register(KategoriModel)
+class KategoriAdmin(admin.ModelAdmin):
+    list_display=('isim',)
 
 @admin.register(YazilarModel)
 class YazilarAdmin(admin.ModelAdmin):

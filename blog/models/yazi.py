@@ -16,6 +16,7 @@ class YazilarModel(DateAbstractModel):
         verbose_name = 'Yazi'
         verbose_name_plural = 'Yazilar'
         db_table = 'Yazi'
+        
     def __str__(self):
         return self.baslik
         
