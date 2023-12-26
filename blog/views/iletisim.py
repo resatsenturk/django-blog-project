@@ -3,13 +3,8 @@ from blog.forms import IletisimForm
 from blog.models import IletisimModel
 
 def iletisim(request):
-    form = IletisimForm(data={
-        'isim_soyisim':'Reşat Şentürk',
-        'email':'example@gmail.com',
-        'mesaj':'Write Here'
-    })
+    form = IletisimForm()
     
-    print(form.errors)
     if request.method=='POST':
         form =IletisimForm(request.POST)
         
