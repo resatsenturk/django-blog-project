@@ -1,4 +1,4 @@
-from django.urls import path,include
+from django.urls import path
 from blog.views import iletisim,anasayfa,kategori,yazilarim,detay,yazi_ekle,yazi_guncelle,yazi_sil,yorum_sil
 
 
