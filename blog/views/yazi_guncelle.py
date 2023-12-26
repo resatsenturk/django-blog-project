@@ -11,5 +11,5 @@ def yazi_guncelle(request,slug):
         form.save()
         return redirect('detay',slug=yazi.slug)
     return render(request,'pages/yazi-guncelle.html',context={
-        'form':form
+        'form':form,
     } )
