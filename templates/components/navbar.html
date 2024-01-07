@@ -1,9 +1,12 @@
 {% load kategori_list %}
+{% load static %}
+
 {% kategori_list as kategoriler %}
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
-      <a class="navbar-brand" href="{% url 'anasayfa' %}">Blog</a>
+      <a class="navbar-brand" href="{% url 'anasayfa' %}">
+        <img  src="{% static 'img/cbülogo2.png' %}" width='60' height='60'  />CbüConv</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -24,3 +27,4 @@
       </div>
     </div>
   </nav>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.19.0/font/bootstrap-icons.css" rel="stylesheet">
