@@ -4,11 +4,11 @@
 {% block title %} Anasayfa {% endblock %}
 
 {% block content %}
-{% for yazi in yazilar%}
+{% for yazi in yazilar %}
 <div class="card mb-3">
   <div class="row g-0">
     <div class="col-md-4">
-      <img src="{{yazi.resim.url}}" class="img">
+      <img src="{{yazi.resim.url}}" class="img-fluid">
     </div>
     <div class="col-md-8">
       <div class="card-body">
@@ -17,7 +17,7 @@
             {{yazi.baslik}}
           </a>
         </h5>
-        <p class="card-text">{{yazi.icerik | safe | truncatechars_html:150}}</p>
+        <p class="card-text" stlye="color:black;">{{yazi.icerik | safe | truncatechars_html:150}}</p>
         <p class="card-text"><small class="text-body-secondary">Önce paylaşıldı:{{yazi.duzenlenme_tarihi|timesince}}</small></p>
       </div>
     </div>
